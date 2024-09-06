@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 
@@ -384,14 +385,14 @@ nav .fa {
   }
 
   .card {
-    width: calc(50% - 40px);
+    width: calc(90% - 40px);
     margin: 20px; 
    
 
   }
 
   .card p{
-   font-size: 11px;
+   font-size: 17px;
 
   }
 
@@ -404,7 +405,7 @@ nav .fa {
   }
 
   .words p {
-    font-size: 20px; 
+    font-size: 30px; 
   }
 
   .card-image {
@@ -589,7 +590,7 @@ nav .fa {
   .card22,
   .card23,
   .card24 {
-    width: 48%; /* Adjusted width for smaller screens */
+    width: 90%; /* Adjusted width for smaller screens */
     margin: 1%; /* Adjusted margin for smaller screens */
     
   }
@@ -674,75 +675,22 @@ img{
   width: 100%;
   height: auto;
   border-radius: 10px;
+  object-fit: cover
+  max-width: 100%
 }
-@media screen and (max-width: 768px) {
+  
+@media (max-width: 480px) {
   .heading h1 {
-    font-size: 45px;
-    margin-top: 30px;
-  }
-
-  body{
-    overflow-x: hidden;
-  }
-  
-  .AU {
-    margin: 0px;
-  }
-  
-  .container {
-    width: 100%;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px 20px; 
-  }
-  
-  .AU-content {
-    width: 100%;
-    margin: 35px 0px;
-  }
-  
-  .AU-content h2 {
     font-size: 30px;
   }
-  
+  .AU-content h2 {
+    font-size: 24px;
+  }
   .AU-content p {
     font-size: 18px;
-    margin-bottom: 20px;
   }
-  
-  .AU-image {
-    width: 100%;
-    height: auto;
-  border-radius: 10px;
-  
-  }
-  
 }
 
-
-
-@keyframes fadeInUp{
-  0%{
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  
-}
-@keyframes fadeInRight{
-  0%{
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  
-}
 
 /*Gallery*/
 
@@ -834,31 +782,17 @@ img{
   margin-left: 0px;
 }
 
-@media screen and (max-width: 900px) {
-  .carousel img{
-    width: calc(100% / 2);
-  }
-  
-
-}
 
 @media screen and (max-width: 550px) {
   .carousel img{
     width: 100%;
   }
+  .wrapper i:first-child{
+  left: -23px;
+  display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 /*contact*/
@@ -952,19 +886,29 @@ img{
  .footer {
   box-sizing: border-box;
   background-color: black;
- 
  height: 250px;
+  padding: 20px 0; 
 }
 
 .container {
   max-width: 1170px;
   margin: auto;
- 
 }
+
+  .container1{
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 8px;
+}
+  
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .footer-d {
@@ -1039,6 +983,14 @@ img{
   .footer-d {
     width: 25%;
     padding: 2px 10px; 
+  }
+
+  .container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 8px;
   }
   
   .footer-d h4 {
